@@ -25,7 +25,7 @@ axios(source)
         const articles = []
 
         //item title depends on what you want to get from website
-        //if you want to get specific things from website you should class names with inspect
+        //if you want to get specific things from website you should check class names with inspect
         $(`.fc-item__title`,html).each(function (){
             const title = $(this).text();
             const url = $(this).find('a').attr('href');
